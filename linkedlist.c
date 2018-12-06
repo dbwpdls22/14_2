@@ -52,3 +52,20 @@ void addTail(int value){
 	
 }
 
+void genList(void){
+   
+    list = create_node(0);
+   
+    return;
+}
+
+void print_list(void){
+	linknd_t *ndPtr;
+	
+	ndPtr = (linknd_t*)list->next;
+	while(ndPtr != NULL){
+		printf("%i ", ndPtr->data);
+		ndPtr = ndPtr->next;
+	}
+	
+}
